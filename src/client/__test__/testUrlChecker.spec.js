@@ -1,15 +1,16 @@
-import { checkUrl } from "../js/checkURL";
+import { checkForURL } from "../js/checkURL";
 
 describe('Test check URL functionality', () => {
-    test('Testing the checkURL function', () => {
-        expect(checkUrl).toBeDefined()
+    test('Testing the checkForURL function', () => {
+        expect(checkForURL).toBeDefined()
     })
 
-    test('checkUrl return false for invalid url', () => {
-        expect(checkUrl('mostatic')).toBeFalsy()
+    test('checkForURL return false for invalid url', () => {
+        expect(checkForURL('mostatic')).toBeFalsy()
     })
 
-    test('checkUrl return true for valid url', () => {
-        expect(checkUrl('http://example.com')).toBeTruthy()
+    test('checkForURL return true for valid url', () => {
+        expect(checkForURL('http://example.com')).toBeTruthy()
     })
+})
 })
