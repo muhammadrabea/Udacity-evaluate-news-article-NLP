@@ -4,9 +4,9 @@ const request = require('supertest')
 const { app } = require('../index')
 
 describe('API Test', () => {
-  test('It Should give not found as add-url is post not get', (done) => {
+  test('It Should give not found as new-url is post not get', (done) => {
     request(app)
-      .get('/add-url')
+      .get('/new-url')
       .then((response) => {
         expect(response.statusCode).toBe(404)
         done()
