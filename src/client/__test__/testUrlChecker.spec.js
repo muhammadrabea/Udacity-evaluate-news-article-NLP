@@ -13,4 +13,3 @@ describe('Test check URL functionality', () => {
         expect(checkForURL('http://example.com')).toBeTruthy()
     })
 })
-})
